@@ -19,19 +19,16 @@ public class HomeWork8 {
                     } else System.out.println("Год НЕ високосный!");
                 }
                 case 2 -> {
-                    System.out.println("Создайте массив.");
                     array = UserInputUtils.getNewArr();
                     double averageElements = ArrayUtils.getAverage(array);
                     System.out.println("Среднее арифметическое значение: " + averageElements);
                 }
                 case 3 -> {
-                    System.out.println("Создайте массив.");
                     array = UserInputUtils.getNewArr();
                     ArrayUtils.invertArr(array);
                     System.out.println(Arrays.toString(array));
                 }
                 case 4 -> {
-                    System.out.println("Создайте массив.");
                     array = UserInputUtils.getNewArr();
                     System.out.print("Введите номер элемента, чей индекс мы ищем: ");
                     int numberOfElement = scanner.nextInt();
@@ -39,7 +36,6 @@ public class HomeWork8 {
                     System.out.println("Индекс элемента: " + indexOfElement);
                 }
                 case 5 -> {
-                    System.out.println("Создайте массив.");
                     array = UserInputUtils.getNewArr();
                     System.out.println("Введите начальный ИНДЕКС: ");
                     int firstIndex = scanner.nextInt();

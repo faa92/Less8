@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 public class UserInputUtils {
-    public static int[] getNewArr() throws IllegalArgumentException {
+    public static int[] getNewArr() {
 
+        System.out.println("Создание массива...");
         System.out.print("Введите длинну массива: ");
 
         Scanner scanner = new Scanner(System.in);

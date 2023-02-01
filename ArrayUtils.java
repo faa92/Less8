@@ -1,6 +1,9 @@
 public class ArrayUtils {
 
     public static double getAverage(int[] arr) {
+        if (arr.length == 0) {
+            throw new IllegalArgumentException("Ошибка! Пустой массив!");
+        }
         int res = 0;
         for (int i = 0; i < arr.length; i++) {
             res += arr[i];
@@ -26,8 +29,8 @@ public class ArrayUtils {
     }
 
     public static int[] getSubArray(int[] arr, int firstIndex, int secondIndex) {
-        if (firstIndex < 0 || secondIndex > arr.length) {
-            throw new IllegalArgumentException("Ошибка");
+        if (firstIndex < 0 || secondIndex > arr.length || firstIndex > secondIndex) {
+            throw new IllegalArgumentException("Ошибка, некоректные границы подмассива!");
         }
         int[] subArr = new int[secondIndex - firstIndex];
         int j = 0;
